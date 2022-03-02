@@ -1,4 +1,4 @@
-# Nao
+# Nao & ageing
 ## project discription 
 
 #### The proposed project addresses risk-factors that can pose barriers to healthy ageing, including a sedentary lifestyle and feelings of loneliness through the use of socially assistive robots (SARs) programmed to support a healthier, more active lifestyle (i.e., active ageing). 
