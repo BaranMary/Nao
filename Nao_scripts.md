@@ -1,8 +1,14 @@
 # Nao's script Phase 1
 
 ## **Greeting**
-### m
+### 
 ## **Introduction**
 ###
+
+## **Fixed questions for all users**
+###
+
+## **Conditional questions**
+
 
 
