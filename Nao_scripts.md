@@ -5,10 +5,16 @@
 ## **Introduction**
 ###
 
-## **Fixed questions for all users**
+## **Fixed questions about their interests/hobbies**
 ###
 
-## **Conditional questions**
+## **Conditional questions about their interests/hobbies**
+### 
+
+## Fixed questions about family member/friends/memories
+###
+
+## **Conditional questions about family member/friends/memories** 
 
 
 
