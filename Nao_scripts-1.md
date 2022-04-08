@@ -3,12 +3,12 @@
 ## **Greeting**
 ### Hello! 
 ### Could you tell me your name?
-How are you?
+### How are you?
 
 
 ## **Introduction**
-###
-
+### Nao introduces itself 
+### Nao asks the users to introduce themselve 
 ## **Fixed questions about their interests/hobbies**
 
 ## **Conditional questions about their interests/hobbies**
