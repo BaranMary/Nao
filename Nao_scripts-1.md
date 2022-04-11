@@ -7,7 +7,8 @@
 
 
 ## **Introduction**
-### Nao introduces itself 
+### Nao introduces itself  
+#### possible ways to introduce
 ### Nao asks the users to introduce themselve 
 ## **Fixed questions about their interests/hobbies**
 
