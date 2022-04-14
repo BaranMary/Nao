@@ -11,6 +11,7 @@
 ### Nao asks the users to introduce themselves
 
 ## **Fixed questions about their interests/hobbies**
+### what do you do in your free time? [Nao should recognize a keyword and ask following conditional questions]
 
 ## **Conditional questions about their interests/hobbies**
 ###
