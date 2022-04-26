@@ -9,21 +9,22 @@ For both phases of study, we will use the following process. The scripts for rec
 ## **Greeting** 
 [Nao has some greetings functions so we need to add to its knowledge base]
 - [ ] Hello!
-- [ ] Can I ask your name?
-  - OR what is your name?
+
 - [ ] How are you?  
+  - OR How's going?
+  - OR How's your feeling today?
 
-- [ ] 
  
-
-
-  
-  
     
 ## **Introduction**
-Nao introduces itself [using its Nao's current lines] 
-Nao asks the users to introduce themselves
-
+- [ ] Nao introduces itself [we can use current Nao's introduction in its knowledge base] 
+  
+- [ ] Nao asks the users to introduce themselves: 
+  - Can I ask your name?
+  - OR what is your name?
+  - OR can you tell me your name?
+  - OR  
+  
 ## **Fixed questions about their interests/hobbies**
 what do you do in your free time? [Nao should recognize a keyword and ask following conditional questions]
 
