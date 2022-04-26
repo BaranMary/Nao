@@ -8,11 +8,18 @@ For both phases of study, we will use the following process. The scripts for rec
 
 ## **Greeting** 
 [Nao has some greetings functions so we need to add to its knowledge base]
-Hello! 
-Can I ask your name?
-How are you?
+- [ ] Hello!
+- [ ] Can I ask your name?
+  - OR what is your name?
+- [ ] How are you?  
+
+- [ ] 
+ 
 
 
+  
+  
+    
 ## **Introduction**
 Nao introduces itself [using its Nao's current lines] 
 Nao asks the users to introduce themselves
