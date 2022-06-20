@@ -1,5 +1,7 @@
 # **Main function categories**
 
+***Older adults perceived as supporting trust: task specifc communication, engaging and responsiveness in communication, and the robot able to both understand and communicate clearly with the older adult.***
+
 Preferably, Nao shows some functions/scenarios in following categories (Smarr et al., 2014):
 
 - [ ] Personal care: e.g., assisting with daily needs: comb hair, brush teeth, get dressed, eating, walking, and drinking. Bathing… 
