@@ -1,5 +1,8 @@
 # *Tips for an influential Human-Robot Interaction*
 
+_Older adults want the robot to be companionable and to get along with them as well as their friends and family. They want the robot to go beyond just performing tasks but also to provide them with a feeling of being cared for as well as something that they feel comfortable
+having others interact with._
+
  ## User interface
  **Ensure that user interface is usable by older adults:**
 - [ ] Audio: ensure that frequency is within common hearing range of older adults and volume is adjustable so that if hearing impaired the volume can be altered to
