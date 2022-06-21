@@ -1,4 +1,4 @@
-# Tips for an influential Human-Robot Interaction
+# *Tips for an influential Human-Robot Interaction*
 
  ## User interface
  **Ensure that user interface is usable by older adults:**
@@ -6,11 +6,14 @@
 ensure clear communication (Stuck & Rogers, 2018)
 - [ ] Visual: make sure that guidelines are followed for older adults by providing high contrast, large print, and simple steps for navigation (Stuck & Rogers, 2018)
 
-## Trust
-Three main communication themes older adults perceive as supporting trust (Stuck & Rogers, 2018): 
-- [ ] task specifc communication, 
-- [ ] engaging and responsiveness in communication, 
-- [ ] the robot able to both understand and communicate clearly with the older adult
+## Trust  
+- [ ] Professional skills:  general capability of the robot, precision, consistency of performance, safety, predictability, and gentleness; e.g., previous experience in a specific task, being on time for medication assistance (Stuck & Rogers, 2018)
+- [ ] Personal traits: the material or texture of the robot, the general appearance of the robot, the compatibility of the robot, the congruence of the care provider values with the older adult’s values, the benevolence and kindness of the robot, and how the robot is dressed (Stuck & Rogers, 2018)
+- [ ] Communication: Three main communication themes older adults perceive as supporting trust (Stuck & Rogers, 2018)
+- Task specifc communication,
+- engaging and responsiveness in communication,
+- the robot able to both understand and communicate clearly with the older adult
+
 
 ## *Main function categories*
 Preferably, Nao shows some functions/scenarios in following categories (Smarr et al., 2014):
