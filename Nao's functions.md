@@ -1,7 +1,6 @@
 # *Tips for an influential Human-Robot Interaction*
 
-_Older adults want the robot to be companionable and to get along with them as well as their friends and family. They want the robot to go beyond just performing tasks but also to provide them with a feeling of being cared for as well as something that they feel comfortable
-having others interact with._
+_Older adults want the robot to be companionable and to get along with them as well as their friends and family. They want the robot to go beyond just performing tasks but also to provide them with a feeling of being cared for as well as something that they feel comfortable having others interact with._
 
  ## User interface
  **Ensure that user interface is usable by older adults:**
@@ -16,6 +15,14 @@ ensure clear communication (Stuck & Rogers, 2018)
 - Task specifc communication,
 - engaging and responsiveness in communication,
 - the robot able to both understand and communicate clearly with the older adult
+
+## Cognition features of ageing adults:
+- **devided attention**: "Older adults show declines in coordinating multiple tasks"_ so we need to have one clear task/sentence/question in each conversation turn
+- **Procedural memory**: "Older adults are less successful in acquiring new procedures"_ it implicates the importance of repitition for them
+- **Prospective memory**: "Older adults show decline in remembering to do things in the future, but this is less evident when strong cues or reminders are available"
+- **Semantic memory**: "Knowledge acquired over time (e.g., vocabulary and historical facts) shows little decline with age but may be slower to retrieve". _ it guide us that we need to give them time by having some scripts such as "take your time"
+- **Working memory**: "Older adults show difficulty in keeping active or manipulating new information in working memory" _ we can provide soe visual info and give them aa summary of key info/depend on the context (Rogers & Mitzner, 2017)
+
 
 
 ## *Main function categories*
