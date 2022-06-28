@@ -23,10 +23,15 @@ For both phases of study, we will use the following process. The scripts for rec
   - Can I ask your name?
   - OR what is your name?
   - OR can you tell me your name?
-  - OR  
+  - OR may I have your name?
   
 ## **Fixed questions about their interests/hobbies**
-what do you do in your free time? [Nao should recognize a keyword and ask following conditional questions]
+- [ ] Nao asks what do users do in their free time? [Nao should recognize a keyword and ask following conditional questions]
+  - What is your favorite sport?
+    - How often do you play that sport every week?
+    - Why do you like it?
+  - OR 
+
 
 ## **Conditional questions about their interests/hobbies**
 
