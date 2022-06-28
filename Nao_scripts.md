@@ -11,8 +11,8 @@ For both phases of study, we will use the following process. The scripts for rec
 - [ ] Hello!
 
 - [ ] How are you?  
-  - OR How's going?
-  - OR How's your feeling today?
+  ~ How's going?
+  ~ OR How's your feeling today?
 
  
     
@@ -30,7 +30,7 @@ For both phases of study, we will use the following process. The scripts for rec
   - What is your favorite sport?
     - How often do you play that sport every week?
     - Why do you like it?
-  - OR 
+  - 
 
 
 ## **Conditional questions about their interests/hobbies**
