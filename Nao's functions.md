@@ -1,6 +1,8 @@
 # *Tips for an influential Human-Robot Interaction*
 
-_Older adults want the robot to be companionable and to get along with them as well as their friends and family. They want the robot to go beyond just performing tasks but also to provide them with a feeling of being cared for as well as something that they feel comfortable having others interact with._
+**Aging** adults want the **robot** to be **companionable** and to get along with them as well as their friends and family. They want the robot to go beyond just performing tasks but also to provide them with a _feeling of being cared_ for as well as something that they feel _comfortable_ having others interact with.
+
+"Much like people like to know what other people are going to do next, similar predictability and transparency will influence HRI." (Rogers & Mitzner, 2017)
 
  ## User interface
  **Ensure that user interface is usable by older adults:**
