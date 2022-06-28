@@ -8,11 +8,9 @@ For both phases of study, we will use the following process. The scripts for rec
 
 ## **Greeting** 
 [Nao has some greetings functions so we need to add to its knowledge base]
-- [ ] Hello!
+- [ ] Hello! / Hi! / Nice to meet you / What's up?
 
-- [ ] How are you?  
-  ~ How's going?
-  ~ OR How's your feeling today?
+- [ ] How are you? / How's going? / How's your feeling today?
 
  
     
@@ -20,17 +18,28 @@ For both phases of study, we will use the following process. The scripts for rec
 - [ ] Nao introduces itself [we can use current Nao's introduction in its knowledge base] 
   
 - [ ] Nao asks the users to introduce themselves: 
-  - Can I ask your name?
-  - OR what is your name?
-  - OR can you tell me your name?
-  - OR may I have your name?
+  - Can I ask your name? / What is your name? / Can you tell me your name? / May I have your name?
   
 ## **Fixed questions about their interests/hobbies**
-- [ ] Nao asks what do users do in their free time? [Nao should recognize a keyword and ask following conditional questions]
-  - What is your favorite sport?
-    - How often do you play that sport every week?
-    - Why do you like it?
-  - 
+- [ ] Nao asks what do users do in their free time: [Nao should recognize a keyword and ask following conditional questions]
+- [ ] Do you like outdoor activities or indoor activities?
+  - Outdoor: balls, jogging, hiking, riding bicycle, etc.
+  - Indoor: swimming, gardening, solitaire, video games, etc.
+- [ ] What is your favorite sport?
+  - How often do you play it every week?
+  - Why do you like it?
+  - Who are you often playing with?
+  - Are you professional on that?
+- [ ] Could you play any musical instruments?
+  - How many instruments can you play?
+  - How many years have you exercised?
+  - Have you ever attended any concerts?
+    - Who's concert?
+- [ ] Do you like playing video games?
+  - Which game are you currently playing?
+    - Is it fun?
+  - How about online games?
+- [ ] 
 
 
 ## **Conditional questions about their interests/hobbies**
