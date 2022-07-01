@@ -21,7 +21,7 @@ For both phases of study, we will use the following process. The scripts for rec
   - Can I ask your name? / What is your name? / Can you tell me your name? / May I have your name?
   
 ## **Fixed questions about their interests/hobbies**
-- [ ] Nao asks what do users do in their free time: [Nao should recognize a keyword and ask following conditional questions]
+- [ ] Nao asks what do users do in their free time.
 - [ ] Do you like outdoor activities or indoor activities?
   - Outdoor: balls, jogging, hiking, riding bicycle, etc.
   - Indoor: swimming, gardening, solitaire, video games, etc.
