@@ -24,7 +24,7 @@ For both phases of study, we will use the following process. The scripts for rec
 - [ ] Nao asks what do users do in their free time.
 - [ ] Do you like outdoor activities or indoor activities?
   - Outdoor: balls, jogging, hiking, riding bicycle, etc.
-  - Indoor: swimming, gardening, solitaire, video games, etc.
+  - Indoor: weight lifting, woodworking, yoga, art, baking, astronomy, Bonsai, Board Game, bowling, Carpentry, chess, coding, dart, dancing, painting, knitting, writing, watching movie or tv show, instruments, pets, photography, reading, singing, drinking tea or whiskey, craft, video game. 
 - [ ] What is your favorite sport?
   - How often do you play it every week?
   - Why do you like it?
