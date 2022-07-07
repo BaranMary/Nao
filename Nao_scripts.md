@@ -23,21 +23,20 @@ For both phases of study, we will use the following process. The scripts for rec
 ## **Fixed questions about their interests/hobbies**
 - [ ] Nao asks what do users do in their free time.
 - [ ] Do you like outdoor activities or indoor activities?
-  - Outdoor: balls, jogging, hiking, riding bicycle, etc.
+  - Outdoor: bike, Skiing, Climbing, Hunting, Hiking, [Photography "taking photos"], jogging, fishing, camping, swimming, kite, Sailing, Walking, Sunbathing, Boating, shopping, "Community events", "Bird watching", Sightseeing, "Neighborhood Strolls", Exhibits, [Arboretums Zoos], Picnics, Concerts.
   - Indoor: weight lifting, woodworking, yoga, art, baking, astronomy, Bonsai, Board Game, bowling, Carpentry, chess, coding, dart, dancing, painting, knitting, writing, watching movie or tv show, instruments, pets, photography, reading, singing, drinking tea or whiskey, craft, video game. 
-- [ ] What is your favorite sport?
-  - How often do you play it every week?
-  - Why do you like it?
-  - Who are you often playing with?
-  - Are you professional on that?
-- [ ] Could you play any musical instruments?
-  - How many instruments can you play?
-  - How many years have you exercised?
-  - Have you ever attended any concerts?
-    - Who's concert?
+  - Ball sports: football, soccer, basketball, badminton, Baseball, Bowling, golf, hockey, polo, Tennis, Volleyball, "Table tennis".
+  - Musical instruments: violin, drums, piano, bass, saxophone, alto, harp, guitar, kettledrum.
+
+- [ ] How often do you play it every week?
+- [ ] Why do you like it?
+- [ ] Who are you often playing with?
+- [ ] Are you professional on that?
+- [ ] How many instruments can you play?
+- [ ] How many years have you exercised?
 - [ ] Do you like playing video games?
   - Which game are you currently playing?
-    - Is it fun?
+  - Is it fun?
   - How about online games?
 - [ ] Do you like playing puzzles?
 
