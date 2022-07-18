@@ -33,7 +33,7 @@ For both phases of study, we will use the following process. The scripts for rec
 - [ ] If the user answers musical instruments, then asking:
   - How many instruments can you play?
   - How many years have you exercised?
-  - why do you like it? Are there any interesting stories between you and it?
+  - Why do you like it? Are there any interesting stories between you and it?
 - [ ] ...
 - [ ] If the user answers other hobbies, then asking:
   - How often do you do it each week?
