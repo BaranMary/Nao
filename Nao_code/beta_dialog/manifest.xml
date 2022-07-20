@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package installOnlyAtStartup="false" uuid="beta720_dialog-795abf" version="0.0.0">
+ <names>
+  <name lang="en_US">Untitled</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <userRequestable/>
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <dialogContent typeVersion="1.0" topicName="greetings">
+   <topic language="en_US" path="greetings/greetings_enu.top"/>
+  </dialogContent>
+ </contents>
+</package>

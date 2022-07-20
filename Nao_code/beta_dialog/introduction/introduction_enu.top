@@ -1,0 +1,22 @@
+topic: ~introduction()
+language: enu
+
+include: lexicon_enu.top
+
+concept:(nao_good) [good excellent wonderful perfect bravo]
+concept:(nao_not_good) ["so so" bad sad tired busy exhausted]
+concept:(nao_sorry) ["I'm sorry {to hear that}" "I feel sorry"]
+concept:(nao_anwei) ["I will stay with you" "health is the most important thing"]
+
+#--------------------------------------------------------------------------
+
+u:(["who are you" "["what is" what's] your name" "may I have your name"]) My name is nao, but you can call me now, {"In case you didn't notice,"} I'm a humanoid robot ["^exist(user_name)" "^notExist(user_name) ^goto(ask_name)"]
+
+u:(["why nao" "why is nao" "why nao is your name"]) My name comes from the Chinese word now, meaning brain, and the English word now! ["^exist(user_name)" "^notExist(user_name) ^goto(ask_name)"]
+
+u:(my name is asdgbwi) %ask_name ["["What is" What's] your name?" "[May Can] I [have ask] your name?" "How can I call you?"]
+    u1:({[I'm "I am" "My name is" "call me"]} _[duke haoyi maryam apple peach grape taco dog cat robin orange papaya]) Thank you, I'll call you $1 then. $user_name = $1
+    
+u:(["What is my name" "Who am I" "Do you [know remember] me"]) ^firstOptional["["You are" "You name is"] $user_name ,my friend." "I don't remember you yet^goto(ask_name)"]
+
+u:(["[forget forgot] me"] {*}) Okay, have a nice day! my friend. ^clear(user_name)
