@@ -51,3 +51,14 @@ For both phases of study, we will use the following process. The scripts for rec
 
 ## **Conditional questions about family member/friends/memories**
 
+
+## **Fixed+conditional questions about participants preferences**
+- [ ] Do you like to have a robot? if so, are you interested in having me?
+- [ ] Do you prefer me having clothes on or you think I am fine?
+- [ ] What things you like a robot do for you? (doing chores, reading book, helping in bathing)
+- [ ] Do you like me helping you in planning for your days? like setting goals?
+- [ ] Do you like to do excercie together?
+- [ ] Do you enjoy talking to me? if so, what topics you like more to talk? 
+- [ ] Is there anything you think I need to improve in myself?
+
+
