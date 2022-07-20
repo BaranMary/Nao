@@ -10,7 +10,7 @@ For both phases of study, we will use the following process. The scripts for rec
 - [ ] Nao can do greetings to users
   - Hello! / Hi! / Nice to meet you / What's up? (+ user's name, if Nao knew the user already)
   - How are you? / How's going? / How's your feeling today?
-  - Nao will answer wisely depends on user's answer (mood)
+  - Nao will answer wisely depends on user's answer (mood: tired, good, sleepy, etc. It has five main types of moods)
 
  
     
