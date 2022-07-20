@@ -34,7 +34,8 @@ For both phases of study, we will use the following process. The scripts for rec
   - How many instruments can you play?
   - How many years have you exercised?
   - Why do you like it? Are there any interesting stories between you and it?
-- [ ] ...
+- [ ] If the user answers drinkings, then asking:
+  - ###############TODO#######################
 - [ ] If the user answers other hobbies, then asking:
   - How often do you do it each week?
   - Why do you like it?
