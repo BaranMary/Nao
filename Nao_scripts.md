@@ -55,7 +55,7 @@ For both phases of study, we will use the following process. The scripts for rec
 ## **Fixed+conditional questions about participants preferences**
 - [ ] Do you like to have a robot? if so, are you interested in having me?
 - [ ] Do you prefer me having clothes on or you think I am fine?
-- [ ] What things you like a robot do for you? (doing chores, reading book, helping in bathing)
+- [ ] What things you like a robot do for you? after they reply, then we can ask which activities you like to get a help from a robot? reminding you to take medications or abou important dats like birthdays of your firends, doing chores, finding information, reading book, helping in bathing
 - [ ] Do you like me helping you in planning for your days? like setting goals?
 - [ ] Do you like to do excercie together?
 - [ ] Do you enjoy talking to me? if so, what topics you like more to talk? 
