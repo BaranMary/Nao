@@ -43,7 +43,7 @@ For both phases of study, we will use the following process. The scripts for rec
 
 ## **Conditional questions about their interests/hobbies**
 - [ ] Do you play sports with your families/children/grand children/husband/wife/parents?
-- [ ] What would you like to do during the raining days/sunny days?
+- [ ] What would you like to do during the rainy days/sunny days?
 - [ ] What would you like to do during weekends?
 
 ## **Fixed questions about family member/friends/memories**
