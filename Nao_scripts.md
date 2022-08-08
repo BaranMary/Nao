@@ -6,14 +6,19 @@ Script preparation for phases 1 and 2. The required scripts for Nao to interact 
 
 For both phases of study, we will use the following process. The scripts for reciprocal interactions are developed for greeting, *fixed questions* for all users (e.g., regarding hobbies, friends, family members, memories, routines), *conditional questions/person focused items* that are based on each person stated responses to the fixed questions (e.g., if a person says they are interested in art, the next question is about the type of art, favourite artist and so on). Once the information from both questions types are collected, more tailored scripts about each response is provided, such as information about a specific interest or possible talk about shared memories. The same format will be done for Bangor interview questions that includes fixed and conditional questions/items. Meanwhile, the SAR is programmed for different modules, including *motion detection*, *face and emotion recognition* as well as *speech interaction* so that it can recognize the users’ faces, voices and speech. 
 
+## **Face laerning & recognition** 
+- [ ] Nao can learn new faces one at a time and recognize mutiple faces at a time.
+  - Nao needs user's name and a light bright place to learn and recognize.
+  - Nao tries to recognize user's face first, if not learned yet, Nao will learn user's face spontaneously.
+  - After learning face, Nao will try to recognize user again and say user's name.
+  - Nao will save user's name with user's face to its database until user asks Nao to delete.
+
 ## **Greeting** 
 - [ ] Nao can do greetings to users
   - Hello! / Hi! / Nice to meet you / What's up? (+ user's name, if Nao knew the user already)
   - How are you? / How's going? / How's your feeling today?
   - Nao will answer wisely depends on user's answer (mood: tired, good, sleepy, etc. It has five main types of moods)
 
- 
-    
 ## **Introduction**
 - [ ] Nao introduces itself
 - [ ] Nao asks the users to introduce themselves: 
