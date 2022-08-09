@@ -55,13 +55,18 @@ For both phases of study, we will use the following process. The scripts for rec
 - [ ] What would you like to do during weekends?
 
 ## **Fixed questions about family member/friends/memories**
+- [ ] Do you like to talk about your good memories or friends?
 
 
 ## **Conditional questions about family member/friends/memories**
 
 
-## **Fixed+conditional questions about participants preferences**
+## **Fixed+conditional questions about what they like to see from Nao to do**
+- [ ] Nao: "I can play guitar, I can sing, I can tell a joke or news, I can remind you tasks, birthdays or medication, I can dance, I can talk about history, I can remember what you tell me know like remembering your memories... I can do a lot of thing" __ question: what would you like me to do now?
+  - if user replies: then play the specific function
+  - if user is silent or is not sure, then the robot can offer a presentation of fun activities 
 
+## **Fixed+conditional questions about participants preferences**
 - [ ] Do you like to have a robot? if so, are you interested in having me?
 - [ ] Do you prefer me to have clothes on or do you think I am fine?
 - [ ] What things do you like a robot to do for you? after they reply, then we can ask which activities you like to get help from a robot? reminding you to take medications or about important dates like birthdays of your friends, doing chores, finding information, reading books, helping in bathing
