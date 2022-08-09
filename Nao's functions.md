@@ -45,10 +45,10 @@ Preferably, Nao shows some functions/scenarios in following categories (Smarr et
 - [ ]  finding information such as weather/news
 - [ ]  Manipulating objects: e.g., reaching or fetching objects, open/close drawers, finding items
 
- ## HRI & function evaluation 
- % we can consider these five categories to develop Nao's functions 
-- a) "Interface: sound, hand and body movements, face tracking.
-- b) Expressiveness: instinctive, lively, natural way of communication.
-- c) Responsiveness: speed of reaction, appropriate responses, easy to follow.
-- d) Usability: easy to interrupt, easy to know what do next.
-- e) Overall: head tracking/movements, enjoyment in interaction"
+ ## HRI & function evaluation
+ [](Comment: we can consider these five categories to develop Nao's functions anf finally evalyate using the questionnaire cited in (Jokinen & Hurtig, 2006))
+- a) "Interface: sound, hand and body movements, face tracking (Anastasiou et al., 2013)
+- b) Expressiveness: instinctive, lively, natural way of communication (Anastasiou et al., 2013)
+- c) Responsiveness: speed of reaction, appropriate responses, easy to follow (Anastasiou et al., 2013).
+- d) Usability: easy to interrupt, easy to know what do next (Anastasiou et al., 2013).
+- e) Overall: head tracking/movements, enjoyment in interaction" (Anastasiou et al., 2013)
