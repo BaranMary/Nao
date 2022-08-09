@@ -75,4 +75,6 @@ For both phases of study, we will use the following process. The scripts for rec
 - [ ] Do you enjoy talking to me? if so, what topics do you like more to talk about?  
 - [ ] Is there anything you think I need to improve in myself?
 
-
+## **Nonverbal interaction**
+- [ ] using handshake with feedback (Bevan & Stanton Fraser, 2015) or a verbal command 
+- [ ] 
