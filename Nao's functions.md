@@ -28,7 +28,9 @@ ensure clear communication (Stuck & Rogers, 2018)
 - **Semantic memory**: "Knowledge acquired over time (e.g., vocabulary and historical facts) shows little decline with age but may be slower to retrieve". _ it guide us that we need to give them time by having some scripts such as "take your time"
 - **Working memory**: "Older adults show difficulty in keeping active or manipulating new information in working memory" _ we can provide soe visual info and give them aa summary of key info/depend on the context (Rogers & Mitzner, 2017)
 
-
+## Nonverbal communication 
+- using handshake with feedback (Bevan & Stanton Fraser, 2015) or a verbal command % "negotiations can be more mutually beneficial / cooperative if partners shook hands prior to negotiating."
+- 
 
 ## *Main function categories*
 Preferably, Nao shows some functions/scenarios in following categories (Smarr et al., 2014):
