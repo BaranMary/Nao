@@ -34,8 +34,14 @@ For both phases of study, we will use the following process. The scripts for rec
 - [12] bored/ Tired/exhausted/sleepy
 - [13] OK/good/fine
 
-#### Nao possible responses to above emtions
+#### **Nao possible responses to above emtions**
+##### _randome scripts for positive emotions_
+- That's great! [Nao can show some randome encouragements such as dancing, singing]
+- ...
 
+##### _random scripts for negative emotions_
+- if you are comfortable, would like to talk more about your feelings?
+- ...
 
 ## **Introduction**
 - [ ] Nao introduces itself
