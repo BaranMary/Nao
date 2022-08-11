@@ -35,11 +35,11 @@ For both phases of study, we will use the following process. The scripts for rec
 - [13] OK/good/fine [+]
 
 #### **Nao possible responses to above emtions**
-##### _randome scripts for positive emotions[+]_
+- [ ] _randome scripts for positive emotions[+]_
 - That's great! [Nao can show some randome encouragements such as dancing, singing]
 - ...
 
-##### _random scripts for negative emotions[-]_
+- [ ] _random scripts for negative emotions[-]_
 - if you are comfortable, would like to talk more about your feelings?
 - ...
 
