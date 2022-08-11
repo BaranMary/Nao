@@ -20,26 +20,26 @@ For both phases of study, we will use the following process. The scripts for rec
   - Nao will answer wisely depends on user's answer (mood: tired, good, sleepy, etc. It has five main types of moods)
   - 
 ### **Feelings/moods**
-- [1] tense/ Worried/ anxious/ nervous/ stressed/ scared/ fearful/ desperated/ panic/ horror
-- [2] Sad/disappointed/discouraged/hopeless/misery/gloomy/ despair/ greif/ miserable/ sarrow/ anguished:
-- [3] Angry/annoyed/frustrated/fury/bitter/frustrated/
-- [4] contempt
-- [5] Disgust/hatred/dislike
-- [6] joy/compassion/amused/ relief/ peaceful/wonderful/ excited/ ecstasy/ interested/ enjoyed/ Happy/glad/content/satisfied
-- [7] suprised
-- [8] So so/indifferent/no feeling
-- [9] lonely
-- [10] relaxed/calm/at ease
-- [11] Sick/ill
-- [12] bored/ Tired/exhausted/sleepy
-- [13] OK/good/fine
+- [1] tense/ Worried/ anxious/ nervous/ stressed/ scared/ fearful/ desperated/ panic/ horror [-]
+- [2] Sad/disappointed/discouraged/hopeless/misery/gloomy/ despair/ greif/ miserable/ sarrow/ anguished [-]
+- [3] Angry/annoyed/frustrated/fury/bitter/frustrated/ [-]
+- [4] contempt [-]
+- [5] Disgust/hatred/dislike [-]
+- [6] joy/compassion/amused/ relief/ peaceful/wonderful/ excited/ ecstasy/ interested/ enjoyed/ Happy/glad/content/satisfied [+]
+- [7] suprised [+]
+- [8] So so/indifferent/no feeling [-]
+- [9] lonely [-]
+- [10] relaxed/calm/at ease [+]
+- [11] Sick/ill [-]
+- [12] bored/ Tired/exhausted/sleepy [-]
+- [13] OK/good/fine [+]
 
 #### **Nao possible responses to above emtions**
-##### _randome scripts for positive emotions_
+##### _randome scripts for positive emotions[+]_
 - That's great! [Nao can show some randome encouragements such as dancing, singing]
 - ...
 
-##### _random scripts for negative emotions_
+##### _random scripts for negative emotions[-]_
 - if you are comfortable, would like to talk more about your feelings?
 - ...
 
