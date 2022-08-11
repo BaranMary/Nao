@@ -18,6 +18,24 @@ For both phases of study, we will use the following process. The scripts for rec
   - Hello! / Hi! / Nice to meet you / What's up? (+ user's name, if Nao knew the user already)
   - How are you? / How's going? / How's your feeling today?
   - Nao will answer wisely depends on user's answer (mood: tired, good, sleepy, etc. It has five main types of moods)
+  - 
+### **Feelings/moods**
+- [1] tense/ Worried/ anxious/ nervous/ stressed/ scared/ fearful/ desperated/ panic/ horror
+- [2] Sad/disappointed/discouraged/hopeless/misery/gloomy/ despair/ greif/ miserable/ sarrow/ anguished:
+- [3] Angry/annoyed/frustrated/fury/bitter/frustrated/
+- [4] contempt
+- [5] Disgust/hatred/dislike
+- [6] joy/compassion/amused/ relief/ peaceful/wonderful/ excited/ ecstasy/ interested/ enjoyed/ Happy/glad/content/satisfied
+- [7] suprised
+- [8] So so/indifferent/no feeling
+- [9] lonely
+- [10] relaxed/calm/at ease
+- [11] Sick/ill
+- [12] bored/ Tired/exhausted/sleepy
+- [13] OK/good/fine
+
+#### Nao possible responses to above emtions
+
 
 ## **Introduction**
 - [ ] Nao introduces itself
@@ -30,7 +48,8 @@ For both phases of study, we will use the following process. The scripts for rec
   
 ## **Fixed proposal flows about their interests/hobbies**
 - [ ] Do you like outdoor activities or indoor activities?
-  - Outdoor: bike, Skiing, Climbing, Hunting, Hiking, [Photography "taking photos"], jogging, fishing, camping, swimming, kite, Sailing, Walking, Sunbathing, Boating, shopping, "Community events", "Bird watching", Sightseeing, "Neighborhood Strolls", Exhibits, [Arboretums Zoos], Picnics, Concerts.
+  - Outdoor: bike, Skiing, Climbing, Hunting, Hiking, [Photography "taking photos"], jogging, fishing, camping, swimming, kite, Sailing, Walking, Sunbathing, Boating, s
+  ping, "Community events", "Bird watching", Sightseeing, "Neighborhood Strolls", Exhibits, [Arboretums Zoos], Picnics, Concerts.
   - Indoor: weight lifting, woodworking, yoga, art, baking, astronomy, Bonsai, Board Game, bowling, Carpentry, chess, coding, dart, dancing, painting, knitting, writing, watching movie or tv show, instruments, pets, photography, reading, singing, drinking tea or whiskey, craft, video game. 
   - Ball sports: football, soccer, basketball, badminton, Baseball, Bowling, golf, hockey, polo, Tennis, Volleyball, "Table tennis".
   - Musical instruments: violin, drums, piano, bass, saxophone, alto, harp, guitar, kettledrum.
