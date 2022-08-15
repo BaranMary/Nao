@@ -16,14 +16,15 @@ For both phases of study, we will use the following process. The scripts for rec
 ## **Greeting** 
 - [ ] Nao can do greetings to users
   - Hello! / Hi! / Nice to meet you / What's up? (+ user's name, if Nao knew the user already)
+  - The weather is good/it is freezing today/Today is a sunndy day. THEN: Do not you think/ Do you like this weather?
   - How are you? / How's going? / How's your feeling today?
   - Nao will answer wisely depends on user's answer (mood: tired, good, sleepy, etc. It has five main types of moods)
-  - 
+
 ### **Feelings/moods**
 - [1] tense/ Worried/ anxious/ nervous/ stressed/ scared/ fearful/ desperated/ panic/ horror [-]
 - [2] Sad/disappointed/discouraged/hopeless/misery/gloomy/ despair/ greif/ miserable/ sarrow/ anguished [-]
-- [3] Angry/annoyed/frustrated/fury/bitter/frustrated/ [-]
-- [4] contempt [-]
+- [3] Angry/piss off/annoyed/frustrated/fury/bitter/frustrated/ [-]
+- [4] bullshit[-]
 - [5] Disgust/hatred/dislike [-]
 - [6] joy/compassion/amused/ relief/ peaceful/wonderful/ excited/ ecstasy/ interested/ enjoyed/ Happy/glad/content/satisfied [+]
 - [7] suprised [+]
