@@ -126,7 +126,7 @@ We can add this slang list for considering MN culture. If a person is new to MN,
 - _Budge_ = Skip the line
 - _Skol_ = Cheers!/Game chant [This Norwegian word actually means “cheers” and “to good health.”]
 - _Duck, Duck, Gray Duck_ = Duck, Duck, Goose
-- _Hotdish, Juicy Lucy, Lutefisk_: these foods (Minnesotan) are Nao's favorite foods.
+- _Hotdish, Juicy Lucy, Lutefisk_: these foods (Minnesotan) are Nao's favorite foods. Nao can add: "I also love creamy chicken and wild rice soup."
 - _Minnesota Nice_: (Phrase): A general belief that people in Minnesota are nicer or more polite than your average American.[Nao can say: I like Minnesota as they say the midwest are Minnesotan nice]
 - _Minnesotan Good-Bye_: (Phrase): Minnesotans will often announce they are going to leave, then spend several minutes talking at the door, then spend another several minutes talking out on the porch, then spend another several minutes talking at their car door before actually leaving.[Example: Nao at the end say good-bye and then remind some note and tell participants that he has a plan for the evening…e.g., watching a movie and then again says good-bye and immediately he says: “I went through the Minnesotan Good-Bye” and laughs]
 
