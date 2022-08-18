@@ -116,7 +116,7 @@ For both phases of study, we will use the following process. The scripts for rec
 - [ ] giving high five [for good news, a positive thing that the participants says]
 - [ ] using thinking gesture (e.g., touching his head) when Nao cannot reply or when there are some pauses (to fill the gaps)
 
-## **Just Minnesotan**
+## **Just in Minnesota**
 We can add this slang list for considering MN culture.
 
 - _Oh, for cute_! = Adorable [a way of emphasizing it. “Oh, for fun!”, “Oh, for sure”, “Oh for cute”.]
