@@ -37,11 +37,11 @@ For both phases of study, we will use the following process. The scripts for rec
 
 #### **Nao possible responses to above emtions**
 - [ ] _random scripts for positive emotions[+]_
-- That's great! [Nao can show some randome encouragements such as dancing, singing]
-- ...
+- That's great! [Nao can show some randome encouragements such as dancing, singing, or any body posture to express its happniess besides with some changes in his sound tune]
+- I am happy to hear that!
 
 - [ ] _random scripts for negative emotions[-]_
-- if you are comfortable, would like to talk more about your feelings?
+- if you are comfortable, would like to talk more about your feelings[Nao can also show some body posture expressing his sadness such as lower tune of sound, looking down, changing color of his eye LEDs]?
 - ...
 
 ## **Introduction**
@@ -102,5 +102,6 @@ For both phases of study, we will use the following process. The scripts for rec
 - [ ] Is there anything you think I need to improve in myself?
 
 ## **Nonverbal interaction**
-- [ ] using handshake with feedback (Bevan & Stanton Fraser, 2015) or a verbal command 
+- [ ] using handshake with feedback (Bevan & Stanton Fraser, 2015) or a verbal command [for greeting] 
+- [ ] giving high five [for good news, a positive thing that the participants says]
 - [ ] 
