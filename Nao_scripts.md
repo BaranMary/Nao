@@ -35,7 +35,7 @@ For both phases of study, we will use the following process. The scripts for rec
 - [12] bored/ Tired/exhausted/sleepy [-]
 - [13] OK/good/fine [+]
 
-#### **Nao possible responses to above emtions**
+#### **Nao possible responses to above emotions**
 - [ ] _random scripts for positive emotions[+]_
 - That's great! [Nao can show some randome encouragements such as dancing, singing, or any body posture to express its happniess besides with some changes in his sound tune]
 - I am happy to hear that!
@@ -115,3 +115,16 @@ For both phases of study, we will use the following process. The scripts for rec
 - [ ] using handshake with feedback (Bevan & Stanton Fraser, 2015) or a verbal command [for greeting] 
 - [ ] giving high five [for good news, a positive thing that the participants says]
 - [ ] using thinking gesture (e.g., touching his head) when Nao cannot reply or when there are some pauses (to fill the gaps)
+
+## **Minnesotan slang**
+We can add these slangs for considering MN cultur.
+- Oh, for cute! = Adorable [a way of emphasising it. “Oh, for fun!”, “Oh, for sure”, “Oh for cute”.]
+- Uff-da = Oh! [Uff da can be used to express surprise, relief, exhaustion, astonishment, and dismay]
+- You betcha = Agreement
+- Holy buckets = Jeez Louise [ike “Jeez Louise” or “For crying out loud.”]
+- Budge = Skip the line
+- Skol = Cheers!/Game chant [This Norwegian word actually means “cheers” and “to good health.”]
+- Duck, Duck, Gray Duck = Duck, Duck, Goose
+- Hotdish, Juicy Lucy, Lutefisk: these foods (minnesotan) are Nao's favourite foods.
+- Minnesota Nice: (Phrase): A general belief that people in Minnesota are nicer or more polite than your average American.[Nao can say: I like minnesota as thye say the midwest are minnesotan nice]
+- Minnesotan Good-Bye: (Phrase): Minnesotans will often announce they are going to leave, then spend several minutes talking at the door, then spend another several minutes talking out on the porch, then spend another several minutes talking at their car door before actually leaving.[Example: Nao at the end say good-bye and then remind some note and tell participants that he has a plan for evening...e.g., watching movie and then again says good-bye and immidiately he says: “I went through the Minnesotan Good-Bye" and laughs] 
