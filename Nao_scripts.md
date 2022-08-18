@@ -102,6 +102,7 @@ For both phases of study, we will use the following process. The scripts for rec
   - if user is silent or is not sure, then the robot can offer a presentation of fun activities 
 
 ## **Fixed+conditional questions about participants preferences**
+- [ ] As you know my name is Nao. do you like to change my name? do you have any suggestions?
 - [ ] Do you like to have a robot? if so, are you interested in having me?
 - [ ] Do you prefer me to have clothes on or do you think I am fine?
 - [ ] What things do you like a robot to do for you? after they reply, then we can ask which activities you like to get help from a robot? reminding you to take medications or about important dates like birthdays of your friends, doing chores, finding information, reading books, helping in bathing
