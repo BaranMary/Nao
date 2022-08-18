@@ -74,17 +74,26 @@ For both phases of study, we will use the following process. The scripts for rec
   - Why do you like it?
   - Who are you often playing with?
 
-
 ## **Conditional questions about their interests/hobbies**
 - [ ] Do you play sports with your families/children/grand children/husband/wife/parents?
 - [ ] What would you like to do during the rainy days/sunny days?
 - [ ] What would you like to do during weekends?
 
+- 
 ## **Fixed questions about family member/friends/memories**
-- [ ] Do you like to talk about your good memories or friends?
+- [ ] Family/friends
+- Do you like to talk about your good memories or friends?
+- [ ] intro/extravert:
+- Are you an introvert person who prefers to be alone and do not like much socializing or are you an extravert person who like hang out with people and socializing a lot?
 
 
 ## **Conditional questions about family member/friends/memories**
+- [ ] family/friends 
+- That's nice! Do you like to see them? if yes, how often you visit them?
+- [ ] introvert/extravert:
+- IF introvert: oh I prefer to be alone, too. I like to read books and think about everything. I have only a few friends that I talk to them! You know you are a good friend of mine!
+- IF extravert: Oh, me too! I prefer to be with people and my friends, talk and have fun together! I really enjoy talking to you! 
+- IF so so/something between: I feel similar about myself. Sometimes I like to talk with a lot of people and sometimes I prefer to be alone and read books or news. 
 
 
 ## **Fixed+conditional questions about what they like to see from Nao to do**
@@ -104,4 +113,4 @@ For both phases of study, we will use the following process. The scripts for rec
 ## **Nonverbal interaction**
 - [ ] using handshake with feedback (Bevan & Stanton Fraser, 2015) or a verbal command [for greeting] 
 - [ ] giving high five [for good news, a positive thing that the participants says]
-- [ ] 
+- [ ] using thinking gesture (e.g., touching his head) when Nao cannot reply or when there are some pauses (to fill the gaps)
