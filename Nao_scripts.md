@@ -116,15 +116,18 @@ For both phases of study, we will use the following process. The scripts for rec
 - [ ] giving high five [for good news, a positive thing that the participants says]
 - [ ] using thinking gesture (e.g., touching his head) when Nao cannot reply or when there are some pauses (to fill the gaps)
 
-## **Minnesotan slang**
-We can add these slangs for considering MN cultur.
-- Oh, for cute! = Adorable [a way of emphasising it. “Oh, for fun!”, “Oh, for sure”, “Oh for cute”.]
-- Uff-da = Oh! [Uff da can be used to express surprise, relief, exhaustion, astonishment, and dismay]
-- You betcha = Agreement
-- Holy buckets = Jeez Louise [ike “Jeez Louise” or “For crying out loud.”]
-- Budge = Skip the line
-- Skol = Cheers!/Game chant [This Norwegian word actually means “cheers” and “to good health.”]
-- Duck, Duck, Gray Duck = Duck, Duck, Goose
-- Hotdish, Juicy Lucy, Lutefisk: these foods (minnesotan) are Nao's favourite foods.
-- Minnesota Nice: (Phrase): A general belief that people in Minnesota are nicer or more polite than your average American.[Nao can say: I like minnesota as thye say the midwest are minnesotan nice]
-- Minnesotan Good-Bye: (Phrase): Minnesotans will often announce they are going to leave, then spend several minutes talking at the door, then spend another several minutes talking out on the porch, then spend another several minutes talking at their car door before actually leaving.[Example: Nao at the end say good-bye and then remind some note and tell participants that he has a plan for evening...e.g., watching movie and then again says good-bye and immidiately he says: “I went through the Minnesotan Good-Bye" and laughs] 
+## **Just Minnesotan**
+We can add this slang list for considering MN culture.
+
+- _Oh, for cute_! = Adorable [a way of emphasizing it. “Oh, for fun!”, “Oh, for sure”, “Oh for cute”.]
+- _Uff-da_ = Oh! [Uff da can be used to express surprise, relief, exhaustion, astonishment, and dismay]
+- _You betcha_ = Agreement
+- _Holy buckets_ = Jeez Louise [ike “Jeez Louise” or “For crying out loud.”]
+- _Budge_ = Skip the line
+- _Skol_ = Cheers!/Game chant [This Norwegian word actually means “cheers” and “to good health.”]
+- _Duck, Duck, Gray Duck_ = Duck, Duck, Goose
+- _Hotdish, Juicy Lucy, Lutefisk_: these foods (Minnesotan) are Nao's favorite foods.
+- _Minnesota Nice_: (Phrase): A general belief that people in Minnesota are nicer or more polite than your average American.[Nao can say: I like Minnesota as they say the midwest are Minnesotan nice]
+- _Minnesotan Good-Bye_: (Phrase): Minnesotans will often announce they are going to leave, then spend several minutes talking at the door, then spend another several minutes talking out on the porch, then spend another several minutes talking at their car door before actually leaving.[Example: Nao at the end say good-bye and then remind some note and tell participants that he has a plan for the evening…e.g., watching a movie and then again says good-bye and immediately he says: “I went through the Minnesotan Good-Bye” and laughs]
+
+
