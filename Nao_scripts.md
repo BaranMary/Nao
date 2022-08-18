@@ -116,8 +116,8 @@ For both phases of study, we will use the following process. The scripts for rec
 - [ ] giving high five [for good news, a positive thing that the participants says]
 - [ ] using thinking gesture (e.g., touching his head) when Nao cannot reply or when there are some pauses (to fill the gaps)
 
-## **Just in Minnesota**
-We can add this slang list for considering MN culture.
+## **Just in Minnesota** 
+We can add this slang list for considering MN culture. If a person is new to MN, less than 5 years, then we can ask them about their countries and language they speak so that for the next session we add some common words/cultures/habit to Nao's knowledge base.
 
 - _Oh, for cute_! = Adorable [a way of emphasizing it. “Oh, for fun!”, “Oh, for sure”, “Oh for cute”.]
 - _Uff-da_ = Oh! [Uff da can be used to express surprise, relief, exhaustion, astonishment, and dismay]
