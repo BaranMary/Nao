@@ -30,7 +30,7 @@ ensure clear communication (Stuck & Rogers, 2018)
 
 ## Nonverbal communication 
 - using handshake with feedback (Bevan & Stanton Fraser, 2015) or a verbal command % "negotiations can be more mutually beneficial / cooperative if partners shook hands prior to negotiating."
-- 
+- Users should be able to control Nao__they can stop Nao from what he is doing (e.g., talking) by patting the top of his head [Nao has some sensors in gray parts including head, hands, and feet so we can utilize them].
 
 ## *Main function categories*
 Preferably, Nao shows some functions/scenarios in following categories (Smarr et al., 2014):
