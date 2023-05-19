@@ -1,0 +1,12 @@
+topic: ~saysetgoal()
+language: enu
+
+
+
+
+
+
+
+u:(Nao do _[1 2 3 4 5 6 7 8 9 10] push up) roger that, $1 . $cnt_push_up = $1 
+
+u:([confirm "do it" begin start "sounds good"]) $confirm = 1

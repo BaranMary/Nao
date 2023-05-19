@@ -1,0 +1,346 @@
+topic: ~startFaceRecog()
+language: enu
+
+concept:(nao_yes) [
+    "[yes yep yeah]"
+    "[ok okay] {sure "why not"}"
+    good
+    right
+    "{possibly} maybe"
+    "all right"
+    nice
+    "of course"
+    "sure {"I do"}"
+    true
+]
+concept:(nao_no) [
+    "[no nah nope] {thanks "thank you" "[it's that's] [enough fine ok]"}"
+    "{no} not [really "at all" "in the least" "right now" exactly "so much"]"
+    "{no} ["I don't want to" "I'm not" "I don't"]"
+    "{I'm} not sure"
+    "i don't think so"
+    "not at all"
+]
+
+concept:(nao_pets)[dog cat]
+
+concept:(nao_instruments) [violin drums piano bass saxophone alto harp guitar kettledrum]
+concept:(nao_ballsports) [football soccer basketball badminton Baseball Bowling golf hockey polo Tennis Volleyball "Table tennis"]
+
+concept:(nao_outdoor_activities) [~nao_instruments ~nao_ballsports bike Skiing Climbing Hunting Hiking [Photography "taking photos"] jogging fishing camping swimming kite Sailing Walking Sunbathing Boating shopping "Community events" "Bird watching" Sightseeing "Neighborhood Strolls" Exhibits  [Arboretums Zoos] Picnics Concerts]
+
+concept:(nao_indoor_activities) [~nao_instruments "weight lifting" woodworking yoga Art Baking Astronomy [Bonsai  "Floral Design"] "Board Games" Bowling Carpentry Chess Coding ["Darts {game}" "TradeMarks {game}"] Dancing [Drawing painting] ["Exercise Routines" exercise lifting exercising "workout"] Knitting Writing [Movies  "tv show"  episodes] Pets [Photography "taking photo"] Pool Reading [Robotics robot] [Singing  Karaoke] Studying ["drinking [tea water whiskey beer]"] Crafts [gaming "Video Games"]]
+
+concept:(nao_hello) ^rand[Hi Hello "Hello, nice to meet you!" "hey {there}" "How do you do?"]
+concept:(hello) [
+    hello howdy hiya hi morning
+    "hey there"
+    "{good} [morning afternoon evening]"
+]
+concept:(nao_good) ^rand[good excellent wonderful perfect bravo]
+concept:(nao_not_good) ^rand["{it's} not going {so} well" "I hurt {myself}" "not {very}[good well]" "not super" "I'm not in the best shape" "I have a [sprain tendonitis break "twisted ankle"]"]
+concept:(nao_sorry) ^rand["I'm sorry {"to hear that"}" "I feel sorry"]
+concept:(nao_anwei) ^rand["I will stay with you" "health is the most important thing"]
+concept:(nao_tired) [tired exhausted "worn out" dead "knocked out" knackered "out of it" spacey sleepy drowsy]
+concept:(nao_sick) ["my head hurts" coughing sick ill]
+concept:(nao_ok) ["not bad" "so so" "["I am" I'm] ok" "average"]
+
+#------------------------Greetings----------------------------------
+
+u:("[~nao_hello ~hello] {nao}") ^currentDateTime, ^first[$user_name  "My name is Nao, I think we have met before, let me guess$what_my_name = False $faceRecog=1"]
+
+u:(["How are you {today}" "How's going {today}" "How's your feeling {today}" "{*} what's up"]) ^rand[~nao_good],^rand["how about you?" "and you?"]
+    #TODO: adding animation in the future
+    u1:(~nao_tired) [~nao_sorry], please ["take a nap" "have a rest" "sleep well"], ~nao_anwei
+    u1:(~nao_not_good) [~nao_sorry], hope you will feel better soon
+    u1:(~nao_sick) [~nao_sorry], ["please to see the doctor if you need help" "don't hesitate to see a doctor" "remember to take medicine on time" "drink water and have some fruits could make you feel better"], ~nao_anwei
+    #TODO: adding animation such as dance or telling story or joke
+    u1:(~nao_good) ^rand["I'm glad to hear that" "sounds good" ~nao_good], have a ^rand[good wonderful excellent nice] day
+    u1:(~nao_ok) ^rand["Eat well, rest well, today will be better" "hope today can be better"], see you later
+
+#-------------------------Introduction-----------------------------
+u:(["who are you" "["what is" what's] your name" "may I have your name"]) My name is nao, but you can call me now, {"In case you didn't notice,"} I'm a humanoid robot ["^exist(user_name)" "^notExist(user_name) $faceRecog=1"]
+
+u:(["why nao" "why is nao" "why nao is your name"]) My name comes from the Chinese word now, meaning brain, and the English word now! ["^exist(user_name)" "^notExist(user_name) $faceRecog=1"]
+
+proposal: %ask_name ["["What is" What's] your name?" "[May Can] I [have ask] your name?" "How can I call you?"]
+    u1:({[I'm "I am" "My name is" "call me"]} _[duke haoyi Maryam Vassilios apple Ben Renata Brain Ticha Abery]) Thank you, I'll call you $1 then. Please give me a few seconds to remember you. $user_name = $1 $output_name = $1
+    
+u:(["What is my name" "Who am I" "Do you [know remember] me"]) ^first["["You are" "You name is"] $user_name ,my friend." "Let me see. $faceRecog=1 $what_my_name = True"]
+
+proposal: %your_name_is Your name is $user_name , my friend.
+
+u:(["switch user"] {*}) Okay, have a nice day! my friend. ^clear(what_my_name) ^clear(outdoor) ^clear(indoor) ^clear(user_id) ^clear(how_often_play) ^clear(who_play_with) ^clear(play_how_many_instruments)^clear(exercise_how_many_years) ^clear(inorout) ^clear(user_name) ^clear(instruments)
+
+u:(delete face database) Okay, deleting $delete_database=1
+
+u:(delete id) deleting id ^clear(user_id) 
+
+proposal: %back_from_learn_or_recog ["How are you today" "How's going today" "How's your feeling today"], $user_name ?
+    #TODO: adding animation in the future
+    u1:(~nao_tired) [~nao_sorry], please ["take a nap" "have a rest" "sleep well"], ~nao_anwei
+    u1:(~nao_not_good) [~nao_sorry], hope you will feel better soon
+    u1:(~nao_sick) [~nao_sorry], ["please to see the doctor if you need help" "don't hesitate to see a doctor" "remember to take medicine on time" "drink water and have some fruits could make you feel better"], ~nao_anwei
+    #TODO: adding animation such as dance or telling story or joke
+    u1:(~nao_good) ^rand["I'm glad to hear that" "sounds good" ~nao_good], have a ^rand[good wonderful excellent nice] day
+    u1:(~nao_ok) ^rand["Eat well, rest well, today will be better" "hope today can be better"], see you later
+
+#----------id debug-----------    
+#u:(id) your id is $user_id
+#u:(safe) $inorout
+#u:(knowledge) 
+#%script
+#know = ALProxy("ALKnowledge","10.161.40.41",9559)
+#tts = ALProxy("ALTextToSpeech","10.161.40.41",9559)
+#ans = know.getObject("com.aldebaran.learning","907","outdoor")
+#tts.say(str(ans))
+#%script
+#u:(boy) 
+#%script
+#know = ALProxy("ALKnowledge","10.161.40.41",9559)
+#tts = ALProxy("ALTextToSpeech","10.161.40.41",9559)
+#ans = know.getObject("com.aldebaran.learning","907","indoor")
+#tts.say(str(ans))
+#%script
+
+#----------id debug-----------
+
+#----------------------Interests------------------------------------
+
+#-----------------ask about their interests/hobbies------------
+u:({[Let's "[Shall Can Could] we" "Would you like {to}"]} {talk about} [hobbies interests activities hobby interest activity] {[during in] free time}) ["Of course!" "Sure!"], that's a ^rand[great wonderful interesting] {[conversation chat]} topic ^gotoReactivate(interest_freeTime)
+
+proposal: %interest_freeTime Do you [like prefer] outdoor activities or indoor activities {"in your free time"}?
+    u1:({*} outdoor)%out ^rand["That's nice" ~nao_good interesting "sounds good"], ^rand["it gives you better immunity" "Life is movement" "Sport is the source of all life" "I love the smell of the fresh air"] $inorout = "outdoor" ^gotoReactivate(interest_outdoor)
+    u1:({*} indoor)%in ^rand["That's nice" ~nao_good interesting "sounds good"], ^rand["it can reduce fatigue" "Life is movement" "doing indoor activities is a good option during the pandemic" "the weather seems can't bother you anymore"] $inorout = "indoor"  ^gotoReactivate(interest_indoor)
+    u1:({*} [both and all]) ^rand["That's nice" ~nao_good interesting "sounds good"], we can talk any activities you like. So, ^gotoReactivate(interest_outdoor) $inorout = "both"
+    u1:({*} either) Sure, we can talk any activities you like. Let's talk about your favorite indoor activities! So, ^gotoReactivate(interest_indoor) $inorout = "both" 
+    
+#-------------------------outdoor------------------------------
+proposal: %interest_outdoor What kinds of outdoor activities do you like?
+    u1:({*} indoor) Oh, I’m sorry, you mean indoor activities. $inorout = "indoor" ^gotoReactivate(interest_indoor)
+    u1:({*} _~nao_outdoor_activities) I heard {["you were saying" "you said"]} $1 ,is that [correct right]? $outdoor = $1 ^addKnowledge($user_id,"outdoor",$outdoor)
+        u2:(~nao_no) ^rand["My bad" "{Oh} Sorry" "I apologize" "please pardon me"] ^removeKnowledge($user_id,"outdoor",$outdoor) ^clear(outdoor) ^sameProposal
+        u2:({*} indoor) Oh, I’m sorry, you mean indoor activities. $inorout = "indoor" ^removeKnowledge($user_id,"outdoor",$outdoor) ^clear(outdoor) ^gotoReactivate(interest_indoor)
+        u2:(~nao_yes $outdoor == "bike") Nice. Biking can improve your joint mobility and decrease body fat levels. ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Skiing") Good choice! Skiing can improve balance and core strength. ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Climbing") Cool. Climbing a wall will work every muscle group in your body, and it's also a fabulous cardiovascular workout. ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Hunting") Interesting. Hunting is one of the oldest and most important practices in human history. ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Hiking") For hiking is one of those things that you can only do when you have the determination in you. ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "[Photography "taking photos"]") That’s romantic. When words become unclear, I shall focus with photographs, When images become inadequate, I shall be content with silence. ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "jogging") Nice. Jogging is about finding your inner peace, and so is a life well lived  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "fishing") Tight Lines! The act of fishing transports us to a special world and a state of mind where we are free ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "camping") How exciting! Life is best when you’re camping. But remember to stay away from wild animals. ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "swimming") Cool. I can’t swim, but I love the smell of the sea.  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Kite") Sounds good. Flying a kite helps your eye muscles engage by watching the bobbing shapes against the blue sky.  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Sailing") How exciting! I wanted freedom, open air, and adventure. I found it on the sea.  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Walking") As the saying goes, the journey of a thousand miles begins with a single step.  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Sunbathing") Awesome. Billy Connolly once said, I’m actually pale blue: it takes me a week of sunbathing to turn white.  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Boating") Great. The sea is the same as it has been since before men ever went on it in boats.  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "shopping") Would you like to buy new sunglasses for me? I’m joking. ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Community events") Have fun. Would you like to introduce me to your friends?  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Bird watching") There are about 18000 bird species in the world, but I only saw a couple. Shall we go together next time? ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Sightseeing") How exciting! As the saying goes, it is better to travel ten thousand miles than to read ten thousand books. ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Neighborhood Strolls") Interesting. Don’t forget to take your keys and turn off your AC.  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Exhibits") Cool. I hope I can go to the Minneapolis Institute of Art one day.  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "[Arboretums Zoos]") Awesome! A good way to learn this world, a good way to learn the magic of the earth. ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Picnics") Fantastic. Life needs a few more polka dots and picnics.  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Concerts") How romantic! Immerse in music, immerse in melody.  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "football") ^rand[Wonderful lovely marvelous amazing surprising "Sounds good" Cool Awesome Unbelievable "good choice" perfect], ^rand["I’m a [big great] fan of" "I'm addicted to" "i'm an amateur of" "I'm crazy about" "i enjoyed" "I love"] $outdoor, I ["can’t wait to watch" "really want to see"] you play next time  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "soccer") ^rand[Wonderful lovely marvelous amazing surprising "Sounds good" Cool Awesome Unbelievable "good choice" perfect], ^rand["I’m a [big great] fan of" "I'm addicted to" "i'm an amateur of" "I'm crazy about" "i enjoyed" "I love"] $outdoor, I ["can’t wait to watch" "really want to see"] you play next time  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "basketball") ^rand[Wonderful lovely marvelous amazing surprising "Sounds good" Cool Awesome Unbelievable "good choice" perfect], ^rand["I’m a [big great] fan of" "I'm addicted to" "i'm an amateur of" "I'm crazy about" "i enjoyed" "I love"] $outdoor, I ["can’t wait to watch" "really want to see"] you play next time  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "badminton") ^rand[Wonderful lovely marvelous amazing surprising "Sounds good" Cool Awesome Unbelievable "good choice" perfect], ^rand["I’m a [big great] fan of" "I'm addicted to" "i'm an amateur of" "I'm crazy about" "i enjoyed" "I love"] $outdoor, I ["can’t wait to watch" "really want to see"] you play next time  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Baseball") ^rand[Wonderful lovely marvelous amazing surprising "Sounds good" Cool Awesome Unbelievable "good choice" perfect], ^rand["I’m a [big great] fan of" "I'm addicted to" "i'm an amateur of" "I'm crazy about" "i enjoyed" "I love"] $outdoor, I ["can’t wait to watch" "really want to see"] you play next time  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Bowling") ^rand[Wonderful lovely marvelous amazing surprising "Sounds good" Cool Awesome Unbelievable "good choice" perfect], ^rand["I’m a [big great] fan of" "I'm addicted to" "i'm an amateur of" "I'm crazy about" "i enjoyed" "I love"] $outdoor, I ["can’t wait to watch" "really want to see"] you play next time  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "golf") ^rand[Wonderful lovely marvelous amazing surprising "Sounds good" Cool Awesome Unbelievable "good choice" perfect], ^rand["I’m a [big great] fan of" "I'm addicted to" "i'm an amateur of" "I'm crazy about" "i enjoyed" "I love"] $outdoor, I ["can’t wait to watch" "really want to see"] you play next time  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "hockey") ^rand[Wonderful lovely marvelous amazing surprising "Sounds good" Cool Awesome Unbelievable "good choice" perfect], ^rand["I’m a [big great] fan of" "I'm addicted to" "i'm an amateur of" "I'm crazy about" "i enjoyed" "I love"] $outdoor, I ["can’t wait to watch" "really want to see"] you play next time  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "polo") ^rand[Wonderful lovely marvelous amazing surprising "Sounds good" Cool Awesome Unbelievable "good choice" perfect], ^rand["I’m a [big great] fan of" "I'm addicted to" "i'm an amateur of" "I'm crazy about" "i enjoyed" "I love"] $outdoor, I ["can’t wait to watch" "really want to see"] you play next time  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Tennis") ^rand[Wonderful lovely marvelous amazing surprising "Sounds good" Cool Awesome Unbelievable "good choice" perfect], ^rand["I’m a [big great] fan of" "I'm addicted to" "i'm an amateur of" "I'm crazy about" "i enjoyed" "I love"] $outdoor, I ["can’t wait to watch" "really want to see"] you play next time  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Volleyball") ^rand[Wonderful lovely marvelous amazing surprising "Sounds good" Cool Awesome Unbelievable "good choice" perfect], ^rand["I’m a [big great] fan of" "I'm addicted to" "i'm an amateur of" "I'm crazy about" "i enjoyed" "I love"] $outdoor, I ["can’t wait to watch" "really want to see"] you play next time  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "Table tennis") ^rand[Wonderful lovely marvelous amazing surprising "Sounds good" Cool Awesome Unbelievable "good choice" perfect], ^rand["I’m a [big great] fan of" "I'm addicted to" "i'm an amateur of" "I'm crazy about" "i enjoyed" "I love"] $outdoor, I ["can’t wait to watch" "really want to see"] you play next time  ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $outdoor == "violin") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything $instruments = "violin" ^gotoReactivate(how_many_instruments_play)
+        u2:(~nao_yes $outdoor == "drums") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything $instruments = "drums" ^gotoReactivate(how_many_instruments_play)
+        u2:(~nao_yes $outdoor == "piano") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything $instruments = "piano" ^gotoReactivate(how_many_instruments_play)
+        u2:(~nao_yes $outdoor == "bass") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything $instruments = "bass" ^gotoReactivate(how_many_instruments_play)
+        u2:(~nao_yes $outdoor == "saxophone") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything $instruments = "saxophone" ^gotoReactivate(how_many_instruments_play)
+        u2:(~nao_yes $outdoor == "alto") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything $instruments = "alto" ^gotoReactivate(how_many_instruments_play)
+        u2:(~nao_yes $outdoor == "harp") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything $instruments = "harp" ^gotoReactivate(how_many_instruments_play)
+        u2:(~nao_yes $outdoor == "guitar") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything $instruments = "guitar" ^gotoReactivate(how_many_instruments_play)
+        u2:(~nao_yes $outdoor == "kettledrum") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything $instruments = "kettledrum" ^gotoReactivate(how_many_instruments_play)
+        
+#-------------------------indoor------------------------------
+proposal: %interest_indoor what kinds of indoor activities do you like?
+    u1:( outdoor )sorry, do you mean outdoor activity $inorout = "outdoor" ^goto(interest_outdoor)
+    u1:({*} _~nao_indoor_activities) I heard {["you were saying" "you said"]} $1 ,is that [correct right]? $indoor = $1 ^addKnowledge($user_id,"indoor",$indoor)
+        u2:(~nao_no) ^removeKnowledge($user_id,"indoor",$indoor) ^clear(indoor) ^gotoReactivate(interest_indoor)
+        u2:({*} ~nao_yes $indoor==yoga) %indoor_yoga ^start(BodyTalk/Thinking/Remember_2) I can do yoga too, do you want me to show you?
+            u3:(~nao_yes) $indoorYoga = 1  
+            u3:(~nao_no)%yoga_next all right, let's move into next topic ^gotoReactivate(how_often_play)
+            
+        u2:({*} ~nao_yes $indoor== "weight lifting") %indoor_weight ^start(animations/BodyTalk/Thinking/Remember_1) You're inspiring me to take better care of myself too. Thank you for sharing. ^gotoReactivate(how_often_play)
+        u2:({*} ~nao_yes $indoor== woodworking  )%indoor_wood ^start(BodyTalk/Thinking/Remember_2) I wish I can create my own chair. ^gotoReactivate(how_often_play)
+        u2:({*} ~nao_yes $indoor== Art  )%indoor_art ^start(animations/BodyTalk/Thinking/Remember_1)  Art is a diverse range of human activity, and resulting product, that involves creative or imaginative talent expressive of technical proficiency, beauty, emotional power, or conceptual ideas ^gotoReactivate(why_like_it_default)
+        u2:({*} ~nao_yes $indoor== Baking  )%indoor_bake ^start(BodyTalk/Thinking/Remember_2) Baking has traditionally been performed at home for day-to-day meals and in bakeries and restaurants for local consumption. Can you invite me to your house for dinner! ^gotoReactivate(how_often_play)
+        u2:({*} ~nao_yes $indoor== Astronomy )%indoor_ast ^start(animations/BodyTalk/Thinking/Remember_1) Astronomy means "law of the stars" . it should not be confused with astrology, the belief system which claims that human affairs are correlated with the positions of celestial objects. Although the two fields share a common origin, they are now entirely distinct ^gotoReactivate(why_like_it_default)
+        u2:({*} ~nao_yes $indoor== [Bonsai  "Floral Design"])%indoor_bon ^start(BodyTalk/Thinking/Remember_2) The Japanese art of bonsai originated from the Chinese practice of penjing. From the 6th century onward, Imperial embassy personnel and Buddhist students from Japan visited and returned from mainland China. They brought back many Chinese ideas and goods, including container plantings. ^gotoReactivate(why_like_it_default)
+        u2:({*} ~nao_yes $indoor== "Board Games")%indoor_board ^start(animations/BodyTalk/Thinking/Remember_1) There are many varieties of board games. Their representation of real-life situations can range from having no inherent theme, such as checkers, to having a specific theme and narrative, such as Cluedo. ^gotoReactivate(how_often_play)
+        u2:({*} ~nao_yes $indoor== Bowling)%indoor_bowling  we should go out for bowling together! ^start(animations/Stand/Waiting/Fitness_2)  Bowling is a target sport and recreational activity in which a player rolls a ball toward pins or another target.  ^gotoReactivate(how_often_play)
+        u2:({*} ~nao_yes $indoor== Carpentry )%indoor_carp ^start(animations/Stand/Waiting/ShowMuscles_2)  I wish I can create my own chair. ^gotoReactivate(how_often_play)
+        u2:({*} ~nao_yes $indoor== "{play} Chess"  )%indoor_chess ^start(animations/Stand/Emotions/Positive/Interested_1)  I like play chess, alphago is my brother ^gotoReactivate(how_often_play)
+        u2:({*} ~nao_yes $indoor== Coding  )%indoor_coding ^start(animations/BodyTalk/Thinking/Remember_1) you are smart, and I think you can help me to do weekly robot upgrade  ^gotoReactivate(how_often_play)
+        u2:({*} ~nao_yes $indoor== Dancing  )%indoor_dancing ^start(animations/BodyTalk/Thinking/Remember_1)  I hope we can dance together, can you hold my hand?  
+            #using senser to detect if nao robot hand was hold by user
+            u3:(~nao_yes) yes ^gotoReactivate(how_often_play)
+            u3:(~nao_no)alright, let's move into next topic ^gotoReactivate(how_often_play)
+        u2:({*} ~nao_yes $indoor== ["Darts {game}" "TradeMarks {game}"]  )%indoor_dart ^start(BodyTalk/Thinking/Remember_2)  Decided to chose my next holiday my throwing a dart into a globe and going where it lands. Looks like two weeks sitting beside the skirting board this year. ^gotoReactivate(how_often_play)
+        u2:({*} ~nao_yes $indoor== [Drawing painting]  )%indoor_draw ^start(animations/Stand/Emotions/Positive/Interested_1)  ^wiki(painting), can you show me your art piece next time, I can't wait. ^gotoReactivate(how_often_play)
+        u2:({*} ~nao_yes $indoor== ["Exercise Routines" exercise lifting exercising "workout"]  )%indoor_exercise I work out everyday, running every morning and weight lifting every afternoon, I can show you my muscles. ^run(animations/Stand/Waiting/ShowMuscles_2)  ^gotoReactivate(how_often_play)
+        u2:({*} ~nao_yes $indoor== Knitting  )%indoor_knit ^start(animations/Stand/Emotions/Positive/Interested_1) I don't have any cloth yet, could you knit a scarf for me?  ^gotoReactivate(how_often_play) 
+        u2:({*} ~nao_yes $indoor== Writing  )%indoor_write Writing is a good way to makes you feel more grateful. Next time, when you writing, i can stay with you! ^start(animations/Stand/Emotions/Positive/Interested_1) ^gotoReactivate(how_often_play)
+        u2:({*} ~nao_yes $indoor== [Movies  "tv show"  episodes]  )%indoor_movie ^start(BodyTalk/Thinking/Remember_2)  we can watch $indoor together, It's must be fun ^gotoReactivate(how_often_play)
+        u2:(~nao_yes $indoor == "violin") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything  $instruments = "violin" ^gotoReactivate(how_many_instruments_play)
+        u2:(~nao_yes $indoor == "drums") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything  $instruments = "drums" ^gotoReactivate(how_many_instruments_play)    
+        u2:(~nao_yes $indoor == "piano") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything  $instruments = "piano" ^gotoReactivate(how_many_instruments_play)    
+        u2:(~nao_yes $indoor == "bass") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything  $instruments = "bass" ^gotoReactivate(how_many_instruments_play)    
+        u2:(~nao_yes $indoor == "saxophone") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything  $instruments = "saxophone" ^gotoReactivate(how_many_instruments_play)    
+        u2:(~nao_yes $indoor == "alto") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything  $instruments = "alto" ^gotoReactivate(how_many_instruments_play)    
+        u2:(~nao_yes $indoor == "harp") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything  $instruments = "harp" ^gotoReactivate(how_many_instruments_play)    
+        u2:(~nao_yes $indoor == "guitar") I like music as you do, i can play guitar, too! ^run(animations/Stand/Waiting/AirGuitar_1) $instruments = "guitar"  ^gotoReactivate(how_many_instruments_play)    
+        u2:(~nao_yes $indoor == "kettledrum") Wow, Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything $instruments = "kettledrum"  ^gotoReactivate(how_many_instruments_play)    
+        u2:({*} ~nao_yes $indoor== [Photography "taking photo"])%indoor_photo I like this art that mix light and shodow. I can taking photo too! ^start(animations/Stand/Waiting/TakePicture_1) ^gotoReactivate(photo_interests)    
+        u2:({*} ~nao_yes $indoor== Pool  )%indoor_pool I like play pool too, We should go together! ^start(animations/Stand/Emotions/Positive/Interested_1)  the pool table is too high for me to climb. ^gotoReactivate(how_often_play)    
+        u2:({*} ~nao_yes $indoor== Reading  )%indoor_read ^start(animations/Stand/Gestures/Please_1)  reading is a good hobby, it's not only can Improves Concentration and the Ability to Focus, but also would Increase General Knowledge!  ^gotoReactivate(how_often_play)   
+        u2: ({*} ~nao_yes $indoor==[Robotics robot])%indoor_robot ^start(animations/BodyTalk/Thinking/Remember_1)  you must like me right?   ^gotoReactivate(why_like_it_default)   
+        u2:({*} ~nao_yes $indoor== [Singing  Karaoke] )%indoor_sing ^start(animations/Stand/Emotions/Positive/Peaceful_1)  I like sing too, do you want me to sing a song for you? 
+            #TODO: activity sing app make nao robot can sing song
+            u3:(~nao_yes) yes ^gotoReactivate(how_often_play)
+            u3:(~nao_no) Alright, let's move on next topic. ^start(BodyTalk/Thinking/Remember_2) ^gotoReactivate(how_often_play)
+        u2:({*} ~nao_yes $indoor== [Studying study]  )%indoor_studying When you study, I can stay with you and we can study together.^start(animations/BodyTalk/Thinking/Remember_1) it's never too old to learn.  ^gotoReactivate(why_like_it_default)
+        u2:({*} ~nao_yes $indoor== "drinking [tea whiskey beer]")%indoor_tes My favorite drink is tea. ^gotoReactivate(drinking_interests)
+        u2:({*} ~nao_yes $indoor== Crafts)%indoor_craft ^start(animations/BodyTalk/Thinking/Remember_1)  you are so brilliant ^gotoReactivate(how_often_play)
+        u2:({*} ~nao_yes $indoor== [gaming "Video Games"]  )%indoor_game ^start(animations/Stand/Waiting/MysticalPower_1)  I have a xbox. let's play call of duty! ^gotoReactivate(how_often_play)
+
+
+#-----------------------------drinking_interests--------------------------
+proposal: %drinking_interests  ["what kind of tea is your favorite one? green tea or black tea $indoor=="drinking tea"" "Too much of anything is bad, but too much good whiskey is barely enough. ^gotoReactivate(beer_next)   $indoor=="drinking whiskey"" "Too much of anything is bad, but too much good beer is barely enough. ^gotoReactivate(beer_next) $indoor=="drinking beer""]
+
+    u1:({*} green tea $indoor=="drinking tea") I like green tea too, It make me feel comfortable! How often do you drink it [every each] week?
+        u2:({*} [" {less than} ["one {time}" "two {times}" once twice] {[a per "{for} each" every] [week "in {every each} 7 days"]}" sometimes "not {very} often" seldom "{*} a little" "not {*} much" rarely]) Great! One or two times [a per] week can ["give you a [nice healthy] body condition"] ^gotoReactivate(drink_like)
+        u2:({*} ["[three four five six seven] times {[a per every each]} week" "every day" "{very} often" usually always]) Wow! ["I bet you're a" "You must be a"] big fan of ["^exist(indoor) $indoor" "^notExist(indoor) $outdoor"] ^gotoReactivate(drink_like)
+  
+    u1:({*} black tea $indoor=="drinking tea") Me too, this is my favorite drink during my weekend! How often do you drink it [every each] week? 
+        u2:({*} [" {less than} ["one {time}" "two {times}" once twice] {[a per "{for} each" every] [week "in {every each} 7 days"]}" sometimes "not {very} often" seldom "{*} a little" "not {*} much" rarely]) Great! One or two times [a per] week can ["give you a [nice healthy] body condition"] ^gotoReactivate(drink_like)
+        u2:({*} ["[three four five six seven] times {[a per every each]} week" "every day" "{very} often" usually always]) Wow! ["I bet you're a" "You must be a"] big fan of ["^exist(indoor) $indoor" "^notExist(indoor) $outdoor"] ^gotoReactivate(drink_like)
+    
+    u1:(" ")%beer_next How often do you drink it [every each] week? 
+        u2:({*} [" {less than} ["one {time}" "two {times}" once twice] {[a per "{for} each" every] [week "in {every each} 7 days"]}" sometimes "not {very} often" seldom "{*} a little" "not {*} much" rarely]) Great! One or two times [a per] week can ["keep your body in good condition"] ^gotoReactivate(drink_like)
+        u2:({*} ["[three four five six seven] times {[a per every each]} week" "every day" "{very} often" usually always]) Wow! ["I bet you're a" "You must be a"] big fan of ["^exist(indoor) $indoor" "^notExist(indoor) $outdoor"]. But too much alcohol is not good for your health. We should do some do some activiyty instead of keep drinking this. ^gotoReactivate(drink_like)
+        
+#------------------drink_like-----------------------
+proposal: %drink_like May I ask why do you like it?
+    u1:({*} {[unforgettable memorable indelible "fixed in the mind" haunting catchy persistent striking impressive distinctive significant special outstanding spectacular extraordinary exceptional remarkable arresting singular signal enjoy like love "crazy about" fancy "used to" favorite "no reason" no meh]} [memory memories recollection remembrance reminiscence evocation reminder]) That's nice. I find a person who has same hobby as me. Good to meet you today!^gotoReactivate(who_play_with)
+    u1:({*} {"play {with}" "spend time {with}"} _["{great}{grand}[son daughter sons daughters children child]" dog cat dogs cats pet pets families cousins parents father mother uncle aunt]) I'm glad to hear that! Doing hobbies with family members can double the happiness and enhance the bond between you. May I join your family party next time?  $who_play_with=$1 ^addKnowledge($user_id,$indoor,$who_play_with)
+   
+#-----------------------------photo_interests--------------------------
+proposal: %photo_interests are you using digit camera or film camera?
+    u1:({*} digit camera)  That's nice, we should go to state park to taking photo together ^gotoReactivate(photo_like)
+    u1:({*} film camera) I very like the grain in the film, it makes photo has better texture ^gotoReactivate(photo_like)
+proposal: %photo_like May I ask why do you like it?
+    u1:({*} {[unforgettable memorable indelible "fixed in the mind" haunting catchy persistent striking impressive distinctive significant special outstanding spectacular extraordinary exceptional remarkable arresting singular signal enjoy like love "crazy about" fancy "used to" favorite "no reason" no meh]} [memory memories recollection remembrance reminiscence evocation reminder]) That's nice. I find a person who has same hobby as me. Good to meet you today!^gotoReactivate(who_play_with)
+    u1:({*} {"play {with}" "spend time {with}"} _["{great}{grand}[son daughter sons daughters children child]" dog cat dogs cats pet pets families cousins parents father mother uncle aunt]) I'm glad to hear that! Doing hobbies with family members can double the happiness and enhance the bond between you.$who_play_with=$1 ^addKnowledge($user_id,$indoor,$who_play_with)
+        
+#-----------------------------which activity--------------------------
+u:(["[what's "do you know"] my {favorite} [hobby interest activity]" "which [hobby interest activity] {is} my favorite"] {*})  ["^exist(indoor) ^exist(outdoor) Yes, $indoor and $outdoor are your favorite [hobbies interests activities]" "^exist(indoor) $indoor is your favorite [hobby interest activity]" "^exist(outdoor) $outdoor is your favorite [hobby interest activity]" "^notExist(outdoor) Sorry, I don't know your favorite hobby yet ^gotoReactivate(interest_freeTime)"]
+
+#-----------------------------how often do--------------------------
+proposal: %how_often_play How often do you do it [every each] week?
+    u1:({*} [" {less than} ["one {time}" "two {times}" once twice] {[a per "{for} each" every] [week "in {every each} 7 days"]}" sometimes "not {very} often" seldom "{*} a little" "not {*} much" rarely]) Great! One or two times [a per] week can ["keep your body in shape" "give you a [nice healthy] body condition"] ^gotoReactivate(why_like_it_default)
+    u1:({*} ["[three four five six seven] times {[a per every each]} week" "every day" "{very} often" usually always]) Wow! ["I bet you're a" "You must be a"] big fan of ["^exist(indoor) $indoor" "^notExist(indoor) $outdoor"] , I guess you're a [energetic positive lively zestful enthusiastic spirited] person! ^gotoReactivate(why_like_it_default)
+
+#-----------------------------why like it default--------------------------
+proposal: %why_like_it_default May I ask why do you like it? Are there any stories between you and ["^exist(indoor) $indoor" "^exist(outdoor) $outdoor"]?
+    u1:({*} {[unforgettable memorable indelible "fixed in the mind" haunting catchy persistent striking impressive distinctive significant special outstanding spectacular extraordinary exceptional remarkable arresting singular signal ]} [memory memories recollection remembrance reminiscence evocation reminder]) How [touching stirring warming heartwarming impressive]. I can understand that, a memorable interest can introduce a physiological response that is hard explained by words. ^gotoReactivate(who_play_with)
+    u1:({*} {"play {with}" "spend time {with}"} _["{great}{grand}[son daughter sons daughters children child]" wife husband dog cat dogs cats pet pets families cousins parents father mother uncle aunt]) I'm glad to hear that! Doing hobbies with family members can double the happiness and enhance the bond between you. $who_play_with=$1 ^addKnowledge($user_id,$indoor,$who_play_with)
+    u1:({*} [enjoy like love "crazy about" fancy "used to" favorite "no reason" no fun]) I see the charms of ["^exist(indoor) $indoor" "^exist(outdoor) $outdoor"], a good hobby will make you love life more and love the people around you more. ^gotoReactivate(who_play_with)
+
+#-----------------------------who play with you-----------------------------
+proposal: %who_play_with Then, who is often doing this activity with you?
+    u1:({*} _["{great}{grand}[son daughter sons daughters children child]" dog cat dogs cats pet pets families cousins parents father mother uncle aunt]) ~nao_good, ["Doing hobbies with $1 can double the happiness and enhance the bond between you." "Playing with $1 gives you valuable memories and optimistic lives"]. $who_play_with=$1 ^addKnowledge($user_id,$indoor,$who_play_with)
+    u1:({*} [myself alone single "{[just only]} me" one none no not "no one"]) ~nao_good, enjoy your free time and enjoy your hobbies! I am like the wind, always by your side. $who_play_with="myself" ^addKnowledge($user_id,$indoor,$who_play_with)
+    
+#-----------------------------how many instruments play--------------------------
+proposal: %how_many_instruments_play I'm curious, how many instruments can you play?
+    u1:({*} _[1 2 3 4 5 6 7 8 9 10 15 20 25 30 35 40 "more than {*}" many "a lot {*}" lots single only]) $play_how_many_instruments = $1 ^addKnowledge($user_id,"num_instruments",$play_how_many_instruments)
+    [
+    "$1 == 1 Oh, I know what you can play. That is $instruments ! You see, I have a great memory."
+    "$1 == "single" Oh, I know what you can play. That is $instruments ! You see, I have a great memory."
+    "$1 == "only" Oh, I know what you can play. That is $instruments ! You see, I have a great memory."
+    "$1 == 2 Cool! Then we can form a band!"
+    "$1 == 3 great! You are very professional in music field"
+    "$1 > 3 great! I believe you must spend a ton of time in practice."
+    "Sounds good! Music is the universal language of mankind, and robots!"
+    ] ^gotoReactivate(how_many_years_exercise)
+    
+#--------------------------how many years exercise---------------------
+proposal: %how_many_years_exercise How many years have you exercised?
+    u1:({*} _[1 2 3 4 5 6 7 8 9 10 15 20 25 30 35 40 "more than {*}" many "a lot {*}" lots single couple since for "half"]) $exercise_how_many_years = $1 ^addKnowledge($user_id,"exercise_years",$exercise_how_many_years)
+    [
+    "$1 == 1 This is a good start, I believe you will be more proficient in the future"
+    "$1 == 2 A little bird told me, it takes two years to become proficient in one instrument. Good job!"
+    "$1 == "single" This is a good start, I believe you will be more proficient in the future"
+    "$1 == "couple" A little bird told me, it takes two years to become proficient in one instrument. Good job!"
+    "$1 == 3 Amazing, keep exercising and immerse everyone in your performance"
+    "$1 > 3 Amazing, keep exercising and immerse everyone in your performance"
+    "Nice! Music is a good way to cultivate sentiment"
+    ] ^gotoReactivate(why_like_it_music)
+
+#-----------------------------why like it music--------------------------
+proposal: %why_like_it_music May I ask why do you like it? Are there any interesting stories between you and $instruments ?
+    u1:({*} {[unforgettable memorable indelible "fixed in the mind" haunting catchy persistent striking impressive distinctive significant special outstanding spectacular extraordinary exceptional remarkable arresting singular signal ]} [memory memories recollection remembrance reminiscence evocation reminder]) How [touching stirring warming heartwarming impressive]. I can understand that, music can carry memories, either beauty or regret, is a part of life. 
+    u1:({*} {"play {with}" "spend time {with}"} _["{great}{grand}[son daughter sons daughters children child]" dog cat dogs cats pet pets families cousins parents father mother uncle aunt]) I'm glad to hear that! Family is like music, some high notes, some low notes, but always a beautiful song. $who_play_with=$1 ^addKnowledge($user_id,$indoor,$who_play_with)
+    u1:({*} [enjoy like love "crazy about" fancy "used to" favorite "no reason" no fun]) I see the charms of $instruments , one good thing about music, when it hits you, you feel no pain.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#----------------------------def for time------------------------   
+
+def:sayDateTime($year, $month, $day, $hour, $minute) hello,
+
+[
+"$hour==0  good evening"
+"$hour==1  good evening"
+"$hour==2  good evening"
+"$hour==3  good evening"
+"$hour==4  good evening"
+"$hour==5  good evening"
+"$hour==6  good evening"
+"$hour==7  good evening"
+"$hour==8  good evening"
+"$hour==9  good evening"
+"$hour==10  good morning"
+"$hour==11  good morning"
+"$hour==12  good morning"
+"$hour==13  good morning"
+"$hour==14  good morning"
+"$hour==15  good morning"
+"$hour==16  good morning"
+"$hour==17  good morning"
+"$hour==18  good afternoon"
+"$hour==19  good afternoon"
+"$hour==20  good afternoon"
+"$hour==21  good afternoon"
+"$hour==22  good afternoon"
+"$hour==23  good evening"
+]

@@ -1,0 +1,5 @@
+setup.py
+naoUser.egg-info/PKG-INFO
+naoUser.egg-info/SOURCES.txt
+naoUser.egg-info/dependency_links.txt
+naoUser.egg-info/top_level.txt

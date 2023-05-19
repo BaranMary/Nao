@@ -1,0 +1,7 @@
+topic: ~dolifting()
+language: enu
+
+
+u:({Nao} ["{["Let's {do}" "Shall we" "Let us" do doing]} lifting" "[play do doing using] barbell"]) Sure. Get ready. $do=1
+
+u:(hi) hello

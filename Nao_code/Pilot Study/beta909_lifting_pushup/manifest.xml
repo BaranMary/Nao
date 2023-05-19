@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package uuid="beta909_lifting_pushup-7736ff" installOnlyAtStartup="false" version="0.0.0">
+ <names>
+  <name lang="en_US">lifting_pushup</name>
+ </names>
+ <supportedLanguages>
+  <language>en_US</language>
+ </supportedLanguages>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="behavior_1">
+   <userRequestable/>
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <dialogContent typeVersion="1.0" topicName="dolifting">
+   <topic path="dolifting/dolifting_enu.top" language="en_US"/>
+  </dialogContent>
+  <dialogContent typeVersion="1.0" topicName="pushup">
+   <topic path="pushup/pushup_enu.top" language="en_US"/>
+  </dialogContent>
+  <dialogContent typeVersion="1.0" topicName="saysetgoal">
+   <topic path="saysetgoal/saysetgoal_enu.top" language="en_US"/>
+  </dialogContent>
+ </contents>
+</package>
